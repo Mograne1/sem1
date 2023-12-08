@@ -1,3 +1,4 @@
+#Нещерет Максим ІКСМ-1
 def find_paragraphs(filename, word):
     with open(filename, "r") as f:
         lines = f.readlines()
@@ -10,9 +11,6 @@ def find_paragraphs(filename, word):
     for paragraph in paragraphs:
         if word in paragraph:
             print(paragraph)
-        else:
-            print("Помилка: слово " + word + " не знайдено в файлі " + filename)
-
 while True:
     filename = "random.txt"
     word = input("Введіть слово для пошуку: ")
